@@ -1,0 +1,239 @@
+@import "normalize.css";
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+   background:url(../img/fondoindexs.jpg)  center repeat fixed;
+   background-attachment:fixed;
+   font-family:Calibri;
+   background-position:left top;
+   -webkit-background-size: 100% 100%;           
+     -moz-background-size: 100% 100%;           
+      -o-background-size: 100% 100%;           
+       background-size: 100% 100%;
+  color:#fff;
+  
+}
+.slides {
+  
+  higher:4%;
+  top:0;
+  background: rgba(0, 0, 0, 0.9); 
+  float: left;
+  }
+
+.slides, .slides li {
+  width: 75vmin;
+  height: 97vmin;
+}
+
+.slides img {
+  height: 99.6vmin;
+  -o-object-fit: cover;
+  object-fit: cover;
+  
+  -o-object-position: top;
+  object-position: top;
+}
+
+.slides li {
+  position: absolute;
+  z-index: 1;
+}
+
+.slides li:target {
+  z-index: 3;
+  -webkit-animation: slide 1s 1;
+}
+
+.slides li:not(:target) { -webkit-animation: hidden 1s 1; }
+
+.thumbnails {
+   margin-top:0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 0;
+  float:left;
+}
+
+.thumbnails li {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+}
+
+.thumbnails a { display: block; }
+
+.thumbnails img {
+  width: 30vmin;
+  height: 19.7vmin;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+
+
+@-webkit-keyframes 
+slide {  0% {
+ -webkit-transform: translateY(-100%);
+ transform: translateY(-100%);
+}
+ 100% {
+ -webkit-transform: translateY(0%);
+ transform: translateY(0%);
+}
+}
+
+@keyframes 
+slide {  0% {
+ -webkit-transform: translateY(-100%);
+ transform: translateY(-100%);
+}
+ 100% {
+ -webkit-transform: translateY(0%);
+ transform: translateY(0%);
+}
+}
+
+@-webkit-keyframes 
+hidden {  0% {
+ z-index: 2;
+}
+ 100% {
+ z-index: 2;
+}
+}
+
+@keyframes 
+hidden {  0% {
+ z-index: 2;
+}
+ 100% {
+ z-index: 2;
+}
+}
+
+
+.invitado a
+{
+  padding:10px 10px;
+  display:block;
+  color:#fff;
+  text-decoration:none;
+}
+.invitado
+{
+  margin-left:87%;
+  display:flex;
+  width:150px;
+  background:#4D105D;
+}
+.registro
+{
+  margin-left:87%;
+  display:flex;
+  display:clear;
+  width:150px;
+  background:#4D105D;
+}
+.registro a
+{
+  padding:10px 10px;
+  display:block;
+  color:#fff;
+  text-decoration:none;
+}
+.inicio
+{
+  margin-left:87%;
+  display:flex;
+  display:clear;
+  width:150px;
+  background:#4D105D;
+}
+.inicio a
+{
+  padding:10px 10px;
+  display:block;
+  color:#fff;
+  text-decoration:none;
+}
+.mainmenu 
+{ background-color:#4D105D;
+  min-width:200px;
+  float:left; 
+} 
+
+
+
+
+#popup1 {
+   visibility: hidden;
+   opacity: 0;
+   margin-top: -300px;
+}
+#popup1:target {
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.8);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   transition:all 1s;
+}
+.popup-contenedor {
+   position: relative;
+   margin:7% auto;
+   padding:30px 50px;
+   background-color: #fafafa;
+   color:#333;
+   border-radius: 3px;
+   width:20%;
+   height:50%;
+}
+.popup-contenedor h2
+{
+  margin-top:6%;
+  margin-left:25%;
+  margin-bottom:10%;
+}
+.popup-contenedor p , input
+{
+  margin-bottom:4%;
+  margin-left:17%;
+}
+.popup-contenedor button
+{
+  margin-left:4%;
+  margin-top:20%;
+  display:flex;
+  float:right;
+  padding:0.6em 0.8em;
+  background-color:rgb(81, 36, 113);
+  color:white;
+  border:none;
+}
+a.popup-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #333;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#fff;
+}
