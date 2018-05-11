@@ -1,0 +1,358 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html
+{
+	 min-height: 100%;
+     position: relative;
+}
+
+body
+{
+	 background:url(../img/fondo.jpg)  center;
+	 background-attachment:fixed;
+	 -webkit-background-size: 100% 100%;           
+     -moz-background-size: 100% 100%;           
+      -o-background-size: 100% 100%;           
+       background-size: 100% 100%;
+	
+}
+header .carrito
+{
+	display:flex;
+	float:left;
+	margin-left:1%;
+	margin-top:0.7%;
+	width:3%;
+}
+
+header .carrito a  img
+{
+	width:80px;
+}
+
+header .contacto
+{
+	display:flex;
+	float:left;
+	margin-left:2.5%;
+	margin-top:0.5%;
+	width:2%;
+}
+header .contacto a  img
+{
+	width:135px;
+}
+
+header .usuario{
+	widht:10%;
+	float:left;
+	margin-left:0.2%;
+    background:#4D105D;
+	padding:0.5%;
+	overflow:hidden;
+	color:#fff;
+	
+}
+header .logotipo{	
+	clear:both;
+	margin-left:0.2%;
+	margin-top:0.2%;
+	widht:10%;
+	float:left;
+	overflow:hidden;
+	
+}
+
+
+header .busqueda{
+	display:flex;
+	float:left;
+	margin-left:5%;
+	margin-top:1%;
+	width:70%;	
+	
+	box-shadow:
+   1px 1px 0 rgb(77, 16, 93),
+   2px 2px 0 rgb(77, 16, 93),
+   3px 3px 0 rgb(77, 16, 93),
+   4px 4px 0 rgb(77, 16, 93),
+   5px 5px 0 rgb(77, 16, 93),
+   6px 6px 0 rgb(77, 16, 93),
+   7px 7px 0 rgb(77, 16, 93)
+  ;
+}
+.busqueda>input[type=text],
+.busqueda>button {
+  display:block;
+  cursor:pointer; cursor: hand;
+  font:1.2em 'Montserrat Alternates';
+}
+.busqueda>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid rgb(81, 36, 113);
+}
+
+.busqueda>button {
+  padding:0.6em 0.8em;
+  background-color:rgb(81, 36, 113);
+  color:white;
+  border:none;
+}
+
+
+.slider {
+	width: 32.5%;
+	height:500px;
+	margin: 2%;
+	margin-left: 35%;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+	height:500px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+.descuentos{
+	width:10%;
+	margin-bottom:0.1%;
+	margin-left:0.2%;
+    background:#4D105D;
+	padding:0.5%;
+	overflow:hidden;
+	color:#fff;
+	
+}
+
+
+header nav{
+	width:99%;
+	margin: 0.2%;
+	background:#4D105D;
+	overflow:hidden;
+	clear:both;
+   box-shadow:
+   1px 1px 0 rgb(0, 0, 0),
+   2px 2px 0 rgb(0, 0, 0),
+   3px 3px 0 rgb(0, 0, 0),
+   4px 4px 0 rgb(0, 0, 0);
+	
+}
+header nav ul{
+	list-style:none;
+	
+}
+header nav ul li{
+	float:left;
+}
+header nav ul li a{
+	padding:10px 20px;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+}
+header nav ul li a:hover{
+	background:#75acec
+	
+}
+
+.main .descuento1, .descuento2 ,.descuento3, .descuento4 ,.descuento5 ,.descuento6 ,.descuento7{	
+	width: 300 px;
+	float: left;
+	margin: 3.2%;
+	padding: 3px;
+	
+}
+
+
+#popup1 {
+   visibility: hidden;
+   opacity: 0;
+   margin-top: -300px;
+}
+#popup1:target {
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.8);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   transition:all 1s;
+}
+.popup-contenedor {
+   position: relative;
+   margin:7% auto;
+   padding:30px 50px;
+   background-color: #fafafa;
+   color:#333;
+   border-radius: 3px;
+   width:50%;
+   height:50%;
+}
+a.popup-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #333;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#fff;
+}
+.modal-wrapper1 .popup-contenedor >img
+{
+	margin:5%;
+	width: 40%;
+	float:left;
+	
+}
+.modal-wrapper1 .popup-contenedor nav ul li a
+{
+	font: 15px arial, sans-serif;
+	margin-left:4%;
+	color:#000;
+	text-decoration:none;
+}
+.modal-wrapper1 .popup-contenedor nav ul
+{
+	margin:9%;
+	
+}
+.modal-wrapper1 .popup-contenedor nav
+{
+	margin-left:10%;
+	float:left;
+}
+.modal-wrapper1 .popup-contenedor h3
+{
+	font: 15px arial, sans-serif ;
+	font-weight: bold;
+	margin-left:60%;
+	margin-top:10%;
+	margin-bottom:5%;
+}
+.popup-contenedor .modificar
+{
+	float:left;
+	margin-left:6%;
+	margin-top:10%;
+	padding:1%; 
+	width:30%;
+}
+.popup-contenedor .modificar a
+{
+	margin-top: 4%;
+	margin-right:2%;
+	font-size:15px center;
+	margin-left:1%;
+	float:left;
+
+}
+
+.main{
+	width:99%;
+	margin: 20px auto;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	background:#fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+	display:flex;
+	margin:1%;
+	margin-left:100px;
+	margin-top:20px;
+	float:left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+	bottom:0;
+	margin:2%;
+	margin-bottom:0.5%;
+    width: 94%;
+    background-color: black;
+    color: white;
+	font-size:20px;
+    text-align: center;
+}

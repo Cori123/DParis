@@ -1,0 +1,198 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html
+{
+	 min-height: 100%;
+     position: relative;
+}
+body
+{
+	 background:url(../img/fondoindex.jpg)  center;
+	 background-attachment:fixed;
+	 -webkit-background-size: 100% 100%;           
+     -moz-background-size: 100% 100%;           
+      -o-background-size: 100% 100%;           
+       background-size: 100% 100%;
+	
+}
+.nameregistro
+{
+	margin:1%;
+	margin-right:80%;
+	background:rgb(81, 36, 113);
+	box-shadow:
+   1px 1px 0 rgb(77, 16, 93),
+   2px 2px 0 rgb(77, 16, 93),
+   3px 3px 0 rgb(77, 16, 93),
+   4px 4px 0 rgb(77, 16, 93),
+   5px 5px 0 rgb(77, 16, 93),
+   6px 6px 0 rgb(77, 16, 93),
+   7px 7px 0 rgb(77, 16, 93)
+  ;
+}
+.nameregistro a
+{
+	padding:4%;
+	font:italic;
+	color:#fff;
+	font-size:30px;
+}
+
+.registro-usuario {
+	margin-left:40%;
+	margin-top:6%;
+	display:table;
+	width:50%;
+}
+.registro-usuario>input[type=text],
+.registro-usuario>input[type=text] {
+  flex:1;
+  width:90%;
+  padding:0.6em;
+  border:0.2em solid rgb(81, 36, 113);
+}
+.registro-usuario a {
+	color:#fff;
+	padding:1%;
+	font-size:20px;
+	width:12%;
+	background:rgb(81, 36, 113);
+	display:flex;
+	box-shadow:
+   1px 1px 0 rgb(77, 16, 93),
+   2px 2px 0 rgb(77, 16, 93),
+   3px 3px 0 rgb(77, 16, 93),
+   4px 4px 0 rgb(77, 16, 93),
+   5px 5px 0 rgb(77, 16, 93),
+   6px 6px 0 rgb(77, 16, 93),
+   7px 7px 0 rgb(77, 16, 93)
+  ;
+}
+.registro-password {
+  margin-left:40%;
+	margin-top:4%;
+	display:table;
+	width:30%;
+}
+.registro-password>input[type=password],
+.registro-password>input[type=password] {
+  flex:1;
+  width:90%;
+  padding:0.6em;
+  border:0.2em solid rgb(81, 36, 113);
+}
+.registro-password a {
+
+	color:#fff;
+	padding:1%;
+	font-size:20px;
+	width:55%;
+	background:rgb(81, 36, 113);
+	display:flex;
+	box-shadow:
+   1px 1px 0 rgb(77, 16, 93),
+   2px 2px 0 rgb(77, 16, 93),
+   3px 3px 0 rgb(77, 16, 93),
+   4px 4px 0 rgb(77, 16, 93),
+   5px 5px 0 rgb(77, 16, 93),
+   6px 6px 0 rgb(77, 16, 93),
+   7px 7px 0 rgb(77, 16, 93)
+  ;
+}
+.registro-password-two {
+  margin-left:40%;
+	margin-top:6%;
+	display:table;
+	width:30%;
+}
+.registro-password-two>input[type=password],
+.registro-password-two>input[type=password] {
+  flex:1;
+  width:90%;
+  padding:0.6em;
+  border:0.2em solid rgb(81, 36, 113);
+}
+.registro-password-two a {
+	color:#fff;
+	padding:1%;
+	font-size:20px;
+	width:100%;
+	background:rgb(81, 36, 113);
+	display:flex;
+	box-shadow:
+   1px 1px 0 rgb(77, 16, 93),
+   2px 2px 0 rgb(77, 16, 93),
+   3px 3px 0 rgb(77, 16, 93),
+   4px 4px 0 rgb(77, 16, 93),
+   5px 5px 0 rgb(77, 16, 93),
+   6px 6px 0 rgb(77, 16, 93),
+   7px 7px 0 rgb(77, 16, 93)
+  ;
+}
+.registro-email {
+  margin-left:40%;
+	margin-top:9%;
+	display:table;
+	width:30%;
+}
+.registro-email>input[type=email],
+.registro-email>input[type=email] {
+  flex:1;
+  width:90%;
+  padding:0.6em;
+  border:0.2em solid rgb(81, 36, 113);
+}
+.registro-email a {
+	color:#fff;
+	padding:1%;
+	font-size:20px;
+	width:55%;
+	background:rgb(81, 36, 113);
+	display:flex;
+	box-shadow:
+   1px 1px 0 rgb(77, 16, 93),
+   2px 2px 0 rgb(77, 16, 93),
+   3px 3px 0 rgb(77, 16, 93),
+   4px 4px 0 rgb(77, 16, 93),
+   5px 5px 0 rgb(77, 16, 93),
+   6px 6px 0 rgb(77, 16, 93),
+   7px 7px 0 rgb(77, 16, 93)
+  ;
+}
+.registrarme
+{
+	margin:50px 0 100px 50%;
+}
+.registrarme a button {
+  padding:0.6em 0.8em;
+  background-color:rgb(81, 36, 113);
+  color:white;
+  border:none;
+  cursor:pointer; 
+cursor: hand;
+
+}
+.registrarme a
+{
+text-decoration:none;
+}
+
+
+
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+	bottom:0;
+	margin:2%;
+	margin-bottom:0.5%;
+    width: 94%;
+    background-color: black;
+    color: white;
+	font-size:20px;
+    text-align: center;
+}
